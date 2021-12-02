@@ -1,6 +1,7 @@
 {
     "support": {
         "enable": true,
+        "supportParentChannelID": 61,
         "supportWarteRaumChannelID": 17
     },
     "verify": {

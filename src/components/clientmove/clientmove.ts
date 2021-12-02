@@ -25,6 +25,10 @@ export const clientmove = (clientEvent: ClientMoved, teamspeak: TeamSpeak) => {
           channelMaxclients: 1,
         })
         .then((newSupportChannel) => {
+          // Move client to Support Channel PARRENT
+          newSupportChannel.move(
+            components.support.supportParentChannelID.toString()
+          );
           // Move Client in Support Channel
           client.move(newSupportChannel.cid);
           newSupportChannel.message(
