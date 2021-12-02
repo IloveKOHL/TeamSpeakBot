@@ -9,6 +9,7 @@ const config = require('./config.json');
 //Import Components
 import { clientmove } from './components/clientmove/clientmove';
 import { clientjoin } from './components/clientjoin/clientjoin';
+import { verify } from './components/textmessage/verify';
 import { ChannelTypes } from 'discord.js/typings/enums';
 
 TeamSpeak.connect({
@@ -28,6 +29,11 @@ TeamSpeak.connect({
     });
     teamspeak.on('clientconnect', (client) => {
       clientjoin(client, teamspeak);
+    });
+    teamspeak.on('textmessage', (msg) => {
+      if (msg.targetmode === TextMessageTargetMode.CLIENT) {
+        verify(msg, teamspeak);
+      }
     });
   })
   .catch((e) => {
