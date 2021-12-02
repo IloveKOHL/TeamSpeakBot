@@ -23,7 +23,6 @@ TeamSpeak.connect({
 })
   .then(async (teamspeak) => {
     console.log('Connected to TeamSpeak');
-
     teamspeak.on('clientmoved', (client) => {
       clientmove(client, teamspeak);
     });
