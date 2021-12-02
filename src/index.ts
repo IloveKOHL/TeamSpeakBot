@@ -10,6 +10,7 @@ const config = require('./config.json');
 import { clientmove } from './components/clientmove/clientmove';
 import { clientjoin } from './components/clientjoin/clientjoin';
 import { verify } from './components/textmessage/verify';
+import { adminCommands } from './components/textmessage/admin_commands';
 import { ChannelTypes } from 'discord.js/typings/enums';
 
 TeamSpeak.connect({
@@ -32,6 +33,13 @@ TeamSpeak.connect({
     teamspeak.on('textmessage', (msg) => {
       if (msg.targetmode === TextMessageTargetMode.CLIENT) {
         verify(msg, teamspeak);
+
+        // Admin Commands
+        if (
+          msg.invoker.servergroups.includes(config.highTeamRoleID.toString())
+        ) {
+          adminCommands(msg, teamspeak);
+        }
       }
     });
   })

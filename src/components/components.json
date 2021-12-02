@@ -2,7 +2,8 @@
     "support": {
         "enable": true,
         "supportParentChannelID": 61,
-        "supportWarteRaumChannelID": 17
+        "supportWarteRaumChannelID": 17,
+        "supportRoleID": 10
     },
     "verify": {
         "enable": true,

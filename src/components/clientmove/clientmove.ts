@@ -40,17 +40,19 @@ export const clientmove = (clientEvent: ClientMoved, teamspeak: TeamSpeak) => {
           });
 
           // Send Support Message
-          teamspeak.getServerGroupById(config.supportRoleID).then((group) => {
-            group.clientList().then((clients) => {
-              clients.forEach((supporters) => {
-                teamspeak
-                  .getClientByUid(supporters.clientUniqueIdentifier)
-                  .then((supporter) => {
-                    supporter.message(`${client.getUrl()} ist im Supportraum.`);
-                  });
+          teamspeak
+            .getServerGroupById(components.support.supportRoleID.toString())
+            .then((group) => {
+              group.clientList().then((clients) => {
+                clients.forEach((supporters) => {
+                  teamspeak
+                    .getClientByUid(supporters.clientUniqueIdentifier)
+                    .then((supporter) => {
+                      supporter.message(`${client.getUrl()} benötigt Support.`);
+                    });
+                });
               });
             });
-          });
         });
     }
   }
