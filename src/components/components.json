@@ -1,0 +1,10 @@
+{
+    "support": {
+        "enable": true,
+        "supportWarteRaumChannelID": 17
+    },
+    "verify": {
+        "enable": true,
+        "verifyRangID": 9
+    }
+}
