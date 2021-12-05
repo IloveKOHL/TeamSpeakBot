@@ -1,6 +1,5 @@
 import { TeamSpeak, TeamSpeakClient } from 'ts3-nodejs-library';
 import { ClientMoved } from 'ts3-nodejs-library/lib/types/Events';
-import { ChannelEdit } from 'ts3-nodejs-library/lib/types/PropertyTypes';
 const components = require('./../components.json');
 const config = require('./../../config.json');
 

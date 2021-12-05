@@ -8,5 +8,9 @@
     "verify": {
         "enable": true,
         "verifyRangID": 9
+    },
+    "clientCount": {
+        "enable": true,
+        "channelID": 89
     }
 }
