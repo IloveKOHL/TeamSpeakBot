@@ -2,12 +2,12 @@
     "host": "localhost",
     "serverport": 9987,
     "username": "serveradmin",
-    "password": "7u2ulSSh",
-    "nickname": "Nuttöö",
-    "api-key": "BAA0Up20GeMR2MIN--N1xaQDhslbcLt8o4HiD0T",
+    "password": "PASSWORD",
+    "nickname": "NICKNAME",
+    "api-key": "API-KEY",
     "standartChannelID": "1",
     "highTeamRoleID": "6",
-    "serverName": "Nuttöö",
-    "serverURL": "https://vckyworld.net",
+    "serverName": "LvckyWorld",
+    "serverURL": "https://lvckyworld.net",
     "welcomeMessage": "Willkommen auf LvckyWorld!"
 }
