@@ -1,4 +1,16 @@
 # TeamSpeakBot
+
+## Fetures
+### Commands
+```
+Command                             | Permission                    | Funktion
+
+!verify                             | ----------                    | Verifies a user with an adjustable rank
+!info <clientID>                    | highteam Role in config.json  | Gives Information about a User
+
+```
+
+
 ## Setup
 ### 1. Download Source and go in the created Folder
 ```
