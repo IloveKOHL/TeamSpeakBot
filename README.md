@@ -1,6 +1,6 @@
 # TeamSpeakBot
 
-## Fetures
+## Features 
 ### Commands
 ```
 Command                             | Permission                    | Funktion
@@ -9,7 +9,6 @@ Command                             | Permission                    | Funktion
 !info <clientID>                    | highteam Role in config.json  | Gives Information about a User
 
 ```
-
 
 ## Setup
 ### 1. Download Source and go in the created Folder
